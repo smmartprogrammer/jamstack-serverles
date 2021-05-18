@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link, navigate } from 'gatsby';
 import Header from '../components/header';
+import Layout from '../components/Layout';
 
 export default function Home() {
   return (
-    <div>
+    <Layout headerTitle="Index page header">
       <Header title="Index Page" />
       hello world...!!!
       <br />
@@ -17,6 +18,6 @@ export default function Home() {
       >
         About Page with Button
       </button>
-    </div>
+    </Layout>
   );
 }
