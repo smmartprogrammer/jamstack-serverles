@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, navigate } from 'gatsby';
 import Header from '../components/header';
 import Layout from '../components/Layout';
+import Button from '@material-ui/core/Button';
 
 export default function Home() {
   return (
@@ -18,6 +19,9 @@ export default function Home() {
       >
         About Page with Button
       </button>
+      <Button variant="contained" color="primary">
+        Hello from Material UI
+      </Button>
     </Layout>
   );
 }
